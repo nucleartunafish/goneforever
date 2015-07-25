@@ -52,10 +52,10 @@ doorDestination[1] = 2;
             <kind>1</kind>
             <string>if place_meeting (x, y, obj_player) &amp;&amp; keyboard_check_pressed(ord ('W'))
 {
-    if(global.currentRoom == 2) {
-        targetRoom = 3;
-    } else if(global.currentRoom == 3) {
-        targetRoom = 2;
+    if(global.currentRoom == getRoomIDByName("room5")) {
+        targetRoom = getRoomIDByName("stripclub");
+    } else if(global.currentRoom == getRoomIDByName("stripclub")) {
+        targetRoom = getRoomIDByName("room5");
     }
     global.previousRoom = global.currentRoom;
     
