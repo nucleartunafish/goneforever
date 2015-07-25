@@ -10,7 +10,15 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.currentRoom = 2;
+
+if(global.previousRoom == 3) {
+    obj_player.x = doubledoor.x;
+    obj_player.y = doubledoor.y;
+} else if(global.previousRoom == 4) {
+    obj_player.x = obj_door_ext.x;
+    obj_player.y = obj_door_ext.y;
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
