@@ -18,9 +18,7 @@ if(global.previousRoom == 3) {
 } else if(global.previousRoom == 4) {
     obj_player.x = obj_door_ext.x;
     obj_player.y = obj_door_ext.y;
-}
-
-show_debug_message(getRoomIDByName("room5"));</code>
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
