@@ -48,8 +48,9 @@ image_yscale = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///initially not thrown
-//thrown = false;
+            <string>///initial properties
+thrown = false;
+carrying = false;
 </string>
           </argument>
         </arguments>
@@ -150,12 +151,15 @@ image_yscale = 3;
             <kind>1</kind>
             <string>///Throw
 
-if(keyboard_check_pressed(ord('Q'))) {
+if(mouse_check_button_pressed(mb_left)) {
     if (place_meeting(x, y, obj_player)) {
-        hspeed = ((mouse_x-obj_player.x)/100);
-        vspeed = ((mouse_y-obj_player.y)/50);
+        //hspeed = ((mouse_x-obj_player.x)/100);
+        //vspeed = ((mouse_y-obj_player.y)/50);
+        direction = point_direction(x, y, mouse_x, mouse_y);
+        speed = 15;
+        friction = 0.24;
     }
-//    thrown = true;
+    thrown = true;
 }
 
 if(pointer.y &gt; room_height) {
@@ -182,11 +186,59 @@ if(pointer.y &gt; room_height) {
           <argument>
             <kind>1</kind>
             <string>///Image rotation
-/*
 if(thrown) {
-    image_angle = 0.2;
+    //image_angle -= 7;
 }
-*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///pick up
+if(place_meeting(x, y, obj_player) &amp;&amp; keyboard_check_pressed(ord('E')) &amp;&amp; !carrying) {
+    carrying = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///carrying
+
+if(carrying) {
+    pointer.x = obj_player.x+3;
+    pointer.y = obj_player.y+45;
+}
 </string>
           </argument>
         </arguments>
