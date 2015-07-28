@@ -1,7 +1,7 @@
 txt = instance_create(argument1,argument2,obj_text);
 with(txt) 
 {
-    depth = -2000000
+    depth = -2000000;
     padding = 3;
     maxlength = view_wview[0];
     text = argument0;
@@ -21,4 +21,3 @@ with(txt)
     boxheight = text_height + (padding*2);
 }
 return txt;
-
