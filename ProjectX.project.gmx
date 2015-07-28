@@ -154,6 +154,7 @@
       </sprites>
       <sprite>sprites\trash_sprite</sprite>
       <sprite>sprites\trashbag_sprite</sprite>
+      <sprite>sprites\store_fence_sprite</sprite>
     </sprites>
     <sprites name="Particles/Effects">
       <sprite>sprites\bug1_sprite</sprite>
@@ -194,6 +195,8 @@
       <sprite>sprites\start_sprite</sprite>
       <sprite>sprites\exit_sprite</sprite>
       <sprite>sprites\exit_fade_sprite</sprite>
+      <sprite>sprites\poster_sprite</sprite>
+      <sprite>sprites\moon_sprite</sprite>
     </sprites>
     <sprites name="Walls/Grounds">
       <sprites name="Walls">
@@ -208,6 +211,7 @@
           <sprite>sprites\wall_stone_a_sprite</sprite>
           <sprite>sprites\wall_stone_b_sprite</sprite>
           <sprite>sprites\blue_wall_sprite</sprite>
+          <sprite>sprites\wall_store_sprite</sprite>
         </sprites>
       </sprites>
       <sprites name="Grounds">
@@ -307,6 +311,7 @@
       <objects name="Triggers">
         <object>objects\obj_door_ext</object>
         <object>objects\obj_door_int</object>
+        <object>objects\forest_main_hobos</object>
       </objects>
     </objects>
     <objects name="Characters">
@@ -429,6 +434,7 @@
       <object>objects\fence_side</object>
       <object>objects\fence2</object>
       <object>objects\trash</object>
+      <object>objects\store_fence</object>
     </objects>
     <objects name="Particles/Effects">
       <object>objects\bug1</object>
@@ -475,6 +481,8 @@
       <object>objects\start</object>
       <object>objects\exit_game</object>
       <object>objects\exit_game_fade</object>
+      <object>objects\poster</object>
+      <object>objects\moon</object>
     </objects>
     <objects name="Walls/Grounds">
       <objects name="Walls">
@@ -489,6 +497,7 @@
           <object>objects\blue_wall</object>
           <object>objects\wall_brown_side</object>
           <object>objects\red_roof</object>
+          <object>objects\wall_store</object>
         </objects>
       </objects>
       <objects name="Grounds">
@@ -540,7 +549,6 @@
       <object>objects\toldo2</object>
       <object>objects\mesa</object>
     </objects>
-    <object>objects\next_room</object>
     <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
@@ -551,6 +559,7 @@
     <room>rooms\alley</room>
     <room>rooms\forest_main</room>
     <room>rooms\forest_hobos</room>
+    <room>rooms\room9</room>
     <room>rooms\road</room>
     <room>rooms\rain</room>
   </rooms>

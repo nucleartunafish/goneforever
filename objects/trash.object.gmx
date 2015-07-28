@@ -35,7 +35,7 @@
         case 3: str = "I'm not digging through that!#At least not while I'm being watched...";break;
         default: str = "something went wrong...";break;
     }
-    scr_text(str,obj_player.x,obj_player.y-20);
+    scr_text(str,obj_player.x,obj_player.y-30);
 }
 </string>
           </argument>

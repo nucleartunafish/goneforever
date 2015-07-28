@@ -130,7 +130,6 @@ if(global.previousRoom == getRoomIDByName("room5")) {
     <instance objName="guard_change_2" x="263" y="480" name="inst_F4699352" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="rain_controll_2" x="-192" y="32" name="inst_3BB1554F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="rain_collider_2" x="120" y="296" name="inst_573005E6" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="next_room" x="-288" y="352" name="inst_ADB0602C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_ext" x="160" y="480" name="inst_0051C031" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

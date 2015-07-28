@@ -90,7 +90,6 @@ if(global.previousRoom = 2) {
     <instance objName="dude2" x="74" y="481" name="inst_F3F63349" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="lightbar" x="437" y="389" name="inst_AD189FAC" locked="0" code="" scaleX="3.20000004768372" scaleY="3" colour="4294967295" rotation="365"/>
     <instance objName="obj_player" x="128" y="320" name="inst_3B7E370F" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="next_room" x="-96" y="96" name="inst_FE53975C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

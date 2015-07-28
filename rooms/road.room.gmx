@@ -134,7 +134,7 @@
     <instance objName="mountain" x="-711" y="472" name="inst_B417A240" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="mountain" x="-838" y="477" name="inst_A5F818C0" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="cloud2" x="-704" y="224" name="inst_93CCFB09" locked="0" code="" scaleX="8" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="next_room" x="-128" y="64" name="inst_30700E57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="moon" x="232" y="286" name="inst_81B341EA" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
