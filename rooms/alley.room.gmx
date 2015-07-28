@@ -10,7 +10,12 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.previousRoom = global.currentRoom;
+global.currentRoom = room;
+if(global.previousRoom == getRoomIDByName("room5")) {
+    obj_player.x = obj_door_ext.x;
+    obj_player.y = obj_door_ext.y;
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -115,7 +120,7 @@
     <instance objName="cloud2" x="240" y="165" name="inst_A4F1B2B8" locked="0" code="" scaleX="8" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="cloud_destroy" x="1504" y="160" name="inst_99A3F116" locked="0" code="" scaleX="8" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="ground_collider" x="-158" y="541" name="inst_7A58C5B7" locked="0" code="" scaleX="38" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="152" y="480" name="inst_F38F2D67" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="160" y="416" name="inst_F38F2D67" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="rain_controll" x="-192" y="0" name="inst_34C21086" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="rain_collider" x="-282" y="521" name="inst_28D20C59" locked="0" code="" scaleX="41" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="security_guard" x="308" y="470" name="inst_79050599" locked="0" code="" scaleX="3.09999990463257" scaleY="3.09999990463257" colour="4294967295" rotation="0"/>
@@ -126,6 +131,7 @@
     <instance objName="rain_controll_2" x="-192" y="32" name="inst_3BB1554F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="rain_collider_2" x="120" y="296" name="inst_573005E6" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="next_room" x="-288" y="352" name="inst_ADB0602C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door_ext" x="160" y="480" name="inst_0051C031" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

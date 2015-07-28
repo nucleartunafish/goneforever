@@ -10,7 +10,15 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.currentRoom = room;
+
+if(global.previousRoom == 3) {
+    obj_player.x = doubledoor.x;
+    obj_player.y = doubledoor.y;
+} else if(global.previousRoom == 4) {
+    obj_player.x = obj_door_ext.x;
+    obj_player.y = obj_door_ext.y;
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -152,7 +160,7 @@
     <instance objName="cloud1" x="-239" y="203" name="inst_3D4AB706" locked="0" code="" scaleX="8" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="cloud1" x="-920" y="150" name="inst_C15460B2" locked="0" code="" scaleX="8" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="shadow_effect" x="84" y="317" name="inst_992CC72C" locked="0" code="" scaleX="19.3799991607666" scaleY="7" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door_ext" x="923" y="506" name="inst_09D69CD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door_ext" x="923" y="474" name="inst_09D69CD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lightning1" x="704" y="224" name="inst_4F77E48E" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="rain_controll" x="-96" y="-64" name="inst_AC8177E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="rain_collider" x="-220" y="517" name="inst_7AAF3AD4" locked="0" code="" scaleX="45" scaleY="1" colour="4294967295" rotation="0"/>
